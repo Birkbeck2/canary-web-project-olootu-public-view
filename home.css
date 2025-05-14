@@ -1,0 +1,65 @@
+/* CSS follows the Mobile-first approach */
+.home-grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 30px;
+  grid-auto-rows: 300px;
+}
+
+.home-grid-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.h_image {
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.h_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Hover effect on each image.
+The opacity of the image is reduced by 0.3% */
+.home-grid-container img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  box-shadow: 11px 9px 6px -3px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  position: relative;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  background-color: #444444;
+  color: #ffffff;
+  display: block;
+  padding: 2px;
+  text-align: center;
+}
+
+/* Media query for tablets and desktop for the home page */
+@media only screen and (min-width: 1024px) {
+  .home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .special-pick {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}

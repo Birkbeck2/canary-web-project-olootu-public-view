@@ -1,0 +1,33 @@
+/* Custom style for the Vintage page */
+.vintage-car-holder {
+    display: block;
+}
+
+.vintage-car-holder > div {
+    margin-bottom: 20px;
+}
+
+
+.vintage-car-holder img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    position: relative;
+}
+
+/* Media query for tablets and desktop specific to the Contact page */
+@media only screen and (min-width: 1024px) {
+    .vintage-car-holder {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .vintage-car-holder > div {
+        width: 33%;
+        margin-bottom: 20px;
+    }
+  }
