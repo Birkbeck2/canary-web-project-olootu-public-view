@@ -1,161 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACar Enthusiast - Home</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto%7CAudiowide"
-    >
-    <link rel="stylesheet" href="global_style.css">
-    <link rel="stylesheet" href="home.css">
-  </head>
-  <body>
-     <!-- Grid is used for the three column layout-->
-    <div class="grid-container">
-      <!-- Header area  -->
-      <header>
-        <a class="skip" href="#main">Skip to content</a>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">
-              <img src="/images/logo2.png" class="logo" alt="Car Enthusiast">
-              </a>
-            </li>
-            <li><a href="/" class="home">Classic Cars</a></li>
-            <li><a href="/vintage/vintage.html">Vintage Cars</a></li>
-            <li><a href="/about/about.html">About</a></li>
-            <li><a href="/contact/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- main area of the home page -->
-      <main id="main" class="home-main">
-        <section>
-          <h1>Home</h1>
-          <div class="h_image">
-            <img src="images/undraw_gifts_0twc.svg" alt="" srcset="">
-            <img src="images/undraw_gifts_0twc.svg" alt="" srcset="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Imprima&family=Lunasima:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container home">
+    <!-- Header and navigation -->
+    <header class="header"></header>
+    <!-- Slogan section for the Hero Banner -->
+    <section>
+      <div class="slogan">
+        <h1>We are Volunteers</h1>
+        <h2 class="slogan-text">
+          Helping the needy
+        </h2>
+      </div>
+    </section>
+
+    <main id="main">
+      <!-- The hero image will be dynamically injected here  in the hero class -->
+      <div class="hero"></div>
+
+      <section class="content">
+        <h1 class="home-title heading">Home</h1>
+
+        <div class="home-info">
+          <div class="item project">
+            <!-- <button onclick="navigateTo()"> cliioo</button> -->
+            <div class="item-text">
+              <!-- <h2>Recent Project</h2> -->
+              <p>Join our projects.</p>
+            </div>
+            <div class="item-pic">
+              <img src="./images/boysandgirls.jpg" alt="Picture showing staff planning a project">
+            </div>
           </div>
-          <div class="home-grid-container">
-            <!-- figure used to be able to have the image and the description together -->
-            <figure class="special-pick">
-              <img
-                src="images/classic/pexels-batuhan-kocabas-123879152-11951586.jpg"
-                alt="Kobacas car"
-              >
-              <figcaption>Owner: Kobacas</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-arthur-1763361040-28161308.jpg"
-                alt="Author car"
-              >
-              <figcaption>Owner: Author</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-derio-14453705.jpg"
-                alt="Deric car"
-              >
-              <figcaption>Owner: Deric</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-helen-alp-46790226-14545978.jpg"
-                alt="Helen car"
-              >
-              <figcaption>Owner: Helen</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic//pexels-ivo-mukkulainen-1617629-6389581.jpg"
-                alt="Makulalein car"
-              >
-              <figcaption>Owner: Makulalein</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-jakewymoore-12522915.jpg"
-                alt="Jakewymoore car"
-              >
-              <figcaption>Owner: Jakewymoore</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-lemmer-27016241.jpg"
-                alt="lemmer car"
-              >
-              <figcaption>Owner: Lemmer</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="images/classic/pexels-robert-price-9994326-16193288.jpg"
-                alt="Robert car"
-              >
-              <figcaption>Owner: Robert</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="images/classic/pexels-vadutskevich-16180536.jpg"
-                alt="Vadutskevich car"
-              >
-              <figcaption>Owner: Vadutskevich</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-sergey-platonov-114873806-10209499.jpg"
-                alt="Sergey car"
-              >
-              <figcaption>Owner: Sergey</figcaption>
-            </figure>
-            <figure class="special-pick">
-              <img
-                src="images/classic/pexels-mikebirdy-8633581.jpg"
-                alt="Mikebirdy car"
-              >
-              <figcaption>Owner: Mikebirdy</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-valeriya-9544286.jpg"
-                alt="valeriya car"
-              >
-              <figcaption>Owner: Valeriya</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-fatih-guney-337108406-18794457.jpg"
-                alt="fatih-guney car"
-              >
-              <figcaption>Owner: Fatih-guney</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="images/classic/pexels-pixabay-163553.jpg"
-                alt="Pixabay car"
-              >
-              <figcaption>Owner: Pixabay</figcaption>
-            </figure>
+          <!-- <a href="/register/register.html"> -->
+          <div class="item register">
+            <div class="item-text">
+              <!-- <h2>Register</h2> -->
+              <p>Register as a Volunteer.</p>
+            </div>
+            <div class="item-pic">
+              <img src="./images/three-volunteers.jpg" alt="picture of three volunteer staff">
+            </div>
           </div>
-        </section>
-      </main>
+          <!-- </a> -->
+          <div class="item contact">
+            <div class="item-text">
+              <p>Get in touch with us.</p>
+            </div>
+            <div class="item-pic">
+              <img src="./images/contact.jpg" alt="Contact us image showing a telephone">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <!-- Footer -->
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="/" class="home">Classic Cars</a></li>
-            <li><a href="/vintage/vintage.html">Vintage Cars</a></li>
-            <li><a href="/about/about.html">About</a></li>
-            <li><a href="/contact/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-  </body>
+    <footer class="footer-container"></footer>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
 </html>

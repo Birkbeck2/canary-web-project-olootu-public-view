@@ -1,0 +1,179 @@
+/* Mobile-first approach. */
+.project-page {
+  text-decoration: underline;
+}
+
+.project-details {
+  display: block;
+  position: relative;
+}
+.join-form {
+  background: #fff;
+  width: 800px;
+  height: 270px;
+  position: absolute;
+  bottom: 0;
+}
+
+.join-form label, input {
+  display: block;
+}
+
+.join-form input {
+  margin-bottom: 10px;
+}
+.join-form form {
+  margin-left: 100px;
+}
+
+.close {
+  font-weight: 900;
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+.item {
+  height: 250px;
+  flex-basis: 350px;
+  padding: 10px;
+  box-shadow: 6px 7px 14px -3px rgba(0, 0, 0, 0.75);
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  flex-grow: 2;
+  position: relative;
+}
+
+.filter-btns {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.input-holder {
+  margin: 40px;
+}
+.input-holder input {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.content .material-icons {
+  font-size: 20px;
+  background: none;
+  position: relative;
+  top: 5px;
+  left: 4px;
+}
+
+.search-label {
+  visibility: hidden;
+}
+
+.likes, .join-btn {
+  padding: 0 10px;
+  background: #ffc107;
+  color: #222;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.join-btn {
+  background: initial;
+  font-weight: 900;
+  cursor: pointer;
+  top: 30px;
+  text-decoration: underline;
+}
+
+.message-text {
+  color: green;
+  font-weight: 800;
+}
+
+.join-border {
+  border-left: 4px solid red;
+  border-top: 4px solid red;
+}
+
+.likes-count {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+button {
+  background: #ffc107;
+  color: #222222;
+  border: 1px solid #222222;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#searchInput {
+  background: #ffffff;
+  color: #222222;
+}
+
+.hero img {
+  object-position: 80% 25%;
+}
+
+.join-proj {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for desktop and larger screens */
+@media only screen and (min-width: 1025px) {
+  .news {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  .item {
+    height: 250px;
+    flex-basis: 350px;
+    margin-bottom: 35px;
+  }
+
+  .input-holder,
+  .filter-btns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    height: 45px;
+  }
+
+  .input-holder {
+    margin: 40px;
+    height: 80px;
+    padding: 40px;
+    background: #222222;
+  }
+  .input-holder input {
+    padding: 10px;
+    flex-grow: 1;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    margin-bottom: initial;
+    height: 25px;
+  }
+
+  /* .likes {
+    bottom: 45px;
+  } */
+}

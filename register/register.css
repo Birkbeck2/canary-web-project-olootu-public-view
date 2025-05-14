@@ -1,0 +1,73 @@
+/* Mobile first approach */
+.register-page {
+  text-decoration: underline;
+}
+
+.register-form {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px dotted #191919;
+  padding: 10px;
+  position: relative;
+  background: #f5f5f5;
+  color: #222222;
+}
+.fieldset {
+  width: 93%;
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
+button {
+  right: 25px;
+  padding: 15px;
+  background: #ffc107;
+  color: #222;
+  font-size: 1.2rem;
+  margin: 20px;
+  margin-left: 65%;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+footer {
+  margin-top: 50px;
+}
+label {
+  display: block;
+  padding: 20px 10px 10px;
+}
+input[type="text"] {
+  display: block;
+  padding: 10px;
+  width: 90%;
+}
+
+.form-error {
+  font-size: 1.6rem;
+  color: red;
+}
+
+.radio-label {
+  display: inline-block;
+}
+.hero img {
+  object-position: 80% 18%;
+}
+
+/* Media query for desktop and larger screens */
+@media only screen and (min-width: 1025px) {
+  .register-form {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px dotted #191919;
+    padding: 10px;
+    position: relative;
+  }
+
+  button {
+    margin-left: 82%;
+  }
+}

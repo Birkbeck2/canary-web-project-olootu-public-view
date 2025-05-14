@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Imprima&family=Lunasima:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="register.css">
+  <script type="module" src="register.js"></script>
+</head>
+
+<body>
+  <div class="container register">
+    <header class="header">
+      <!-- Header will be dynamically injected here. -->
+    </header>
+    <main id="main">
+      <div class="hero">
+        <!-- The hero image will be dynamically injected here. -->
+      </div>
+      <!-- Slogan section for the Hero Banner -->
+      <section>
+        <div class="slogan">
+          <h1>Volunteer to serve</h1>
+          <h2 class="slogan-text">
+            Register today!
+          </h2>
+        </div>
+      </section>
+      <section class="content">
+        <h1 class="project-title heading">Register</h1>
+        <!-- Registration form -->
+        <div class="register-form">
+          <form id="form">
+            <div class="form-container">
+              <div class="form-group">
+                <label for="name">Name <span class="require">*</span></label>
+                <input type="text" name="name" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="require">*</span></label>
+                <input type="text" name="email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone <span class="require">*</span></label>
+                <input type="text" name="telephone" id="telephone">
+              </div>
+              <div class="form-group fieldset">
+                <fieldset class="form-group">
+                  <legend>Have you worked as a volunteer before? <span class="require">*</span></legend>
+                  <div class="radio-group">
+                    <input type="radio" value="No" name="volunteer" id="no" checked>
+                    <label class="radio-label" for="no">No</label>
+                    <input type="radio" value="Yes" name="volunteer" id="yes">
+                    <label class="radio-label" for="yes">Yes</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form-group fieldset">
+                <fieldset class="form-group">
+                  <legend>How would you like to be contacted? <span class="require">*</span></legend>
+                  <div class="radio-group">
+                    <input type="checkbox" name="email_preference" id="emailId">
+                    <label class="radio-label" for="emailId">Email</label>
+                    <input type="checkbox" name="tel_preference" id="tel_no">
+                    <label class="radio-label" for="tel_no">Telephone</label>
+                  </div>
+                </fieldset>
+              </div>
+              <button id="submit_btn" class="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <!-- Footer will be dynamically injected here. -->
+    </footer>
+  </div>
+</body>
+
+</html>
